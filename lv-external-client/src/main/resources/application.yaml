@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+task:
+  async-response-timeout: 10000
+  lock-duration: 1000
+  subscribe-topic: lv-topic
+  url-rest-engine: http://localhost:8081/engine-rest
+  worker-id:
+  url: http://localhost:9080/lv

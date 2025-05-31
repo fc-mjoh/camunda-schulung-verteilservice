@@ -10,6 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>camunda-verteilservice</module>
+        <module>kv-external-client</module>
+        <module>lv-external-client</module>
+        <module>dok-api-external-client</module>
     </modules>
 
     <properties>

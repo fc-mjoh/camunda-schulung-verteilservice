@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "verteilservice",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

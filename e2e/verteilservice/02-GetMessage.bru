@@ -1,0 +1,21 @@
+meta {
+  name: 02-GetMessage
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8081/engine-rest/message
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "messageName": "kv-response-message",
+    "businessKey" : "test123",
+    "type": "String",
+    "successful": "true"
+  
+  }
+}

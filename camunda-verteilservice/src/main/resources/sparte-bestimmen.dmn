@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1w2pngr" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.34.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.23.0">
+  <decision id="sparte-bestimmen" name="Decision 1" camunda:historyTimeToLive="1">
+    <decisionTable id="DecisionTable_0xk0kxm">
+      <input id="Input_1">
+        <inputExpression id="InputExpression_1" typeRef="string" expressionLanguage="feel">
+          <text>consumer</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="sparte" name="sparte" typeRef="string" />
+      <rule id="DecisionRule_0gw8ch2">
+        <inputEntry id="UnaryTests_1eaxqnz">
+          <text>"check24-kv"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1f9t7fu">
+          <text>"kv"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xzw783">
+        <inputEntry id="UnaryTests_1muhidu">
+          <text>"check24-lv"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0lrypv0">
+          <text>"lv"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="sparte-bestimmen">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

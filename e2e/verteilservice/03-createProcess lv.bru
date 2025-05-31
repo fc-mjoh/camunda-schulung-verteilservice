@@ -1,0 +1,28 @@
+meta {
+  name: 03-createProcess lv
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8081/engine-rest/process-definition/key/verteilprozess-v1/start
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "businessKey": "test123",
+    "variables": {
+      "payload": {
+        "value": "{}",
+        "type": "String"
+      },
+      "consumer": {
+        "value": "check24-lv",
+        "type": "String"
+      }
+      
+    }
+  }
+}
