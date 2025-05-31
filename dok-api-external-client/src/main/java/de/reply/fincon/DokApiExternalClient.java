@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
-public class Main {
-    private static final Logger LOGGER = LoggerFactory.getLogger(de.reply.fincon.Main.class);
+public class DokApiExternalClient {
+    private static final Logger LOGGER = LoggerFactory.getLogger(DokApiExternalClient.class);
 
     public static void main(String[] args) {
         ExternalTaskClient client = ExternalTaskClient.create().baseUrl("http://localhost:8081/engine-rest")
